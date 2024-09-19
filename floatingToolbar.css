@@ -25,3 +25,31 @@
     --zen-element-separation: 10px !important;
   }
 }
+
+/* Bookmarks bar support */
+#PersonalToolbar:not([collapsed="true"]) {
+  background: var(--zen-colors-tertiary) !important;
+  border: 1px solid var(--zen-colors-border) !important;
+  
+  border-radius: 0 0 var(--zen-border-radius) var(--zen-border-radius);
+  border-top: none !important;
+  
+  margin-top: calc(var(--zen-border-radius) * -0.8) !important;
+  padding-top: calc(var(--zen-border-radius) * 0.8) !important;
+  
+  z-index: 2;
+  position: relative;
+}
+
+/* Separate bookmarks bar option */
+@media (-moz-bool-pref: "uc.floatingtoolbar.separate-bookmarks-bar") {
+  #PersonalToolbar:not([collapsed="true"]) {
+    background: var(--zen-colors-tertiary) !important;
+    border: 1px solid var(--zen-colors-border) !important;
+    
+    border-radius: var(--zen-border-radius);
+    
+    margin-top: 8px !important;
+    padding-top: 6px !important;
+  }
+}
