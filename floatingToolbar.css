@@ -3,6 +3,7 @@
   border: none !important;
   background: none !important;
   box-sizing: border-box;
+  box-shadow: none !important;
 }
 
 #nav-bar,
