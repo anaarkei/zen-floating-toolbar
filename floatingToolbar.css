@@ -6,6 +6,7 @@
     background: none !important;
     box-sizing: border-box;
     box-shadow: none !important;
+    backdrop-filter: none !important;
   }
 
   #nav-bar {
@@ -32,8 +33,7 @@
 
 /* Enable compact toolbar, similar to Smaller Compact Mode by n7itro */
 @media (-moz-bool-pref: "zen.view.compact") and (-moz-bool-pref: "uc.floatingtoolbar.compact.enabled") {
-  #nav-bar,
-  #PersonalToolbar {
+  #zen-appcontent-navbar-container {
     width: 75vw !important;
     margin-left: calc( 12.5vw - var(--zen-element-separation) * 2) !important;
   }
