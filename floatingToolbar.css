@@ -50,6 +50,13 @@
   }
 }
 
+/* Decrease space around toolbar for use when compact mode is disabled */
+@media (-moz-bool-pref: "zen.view.compact") and (-moz-bool-pref: "uc.floatingtoolbar.decrease.spacing") {
+  #main-window {
+    --zen-element-separation: 2px !important;
+  }
+}
+
 /* Merge bookmark bar with toolbar */
 @media (-moz-bool-pref: "zen.view.compact") and (-moz-bool-pref: "uc.floatingtoolbar.merge.bookmarks") {
   #nav-bar {
